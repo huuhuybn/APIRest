@@ -18,6 +18,8 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
+    // Load More : ListView hoac RecyclerView khi user kéo danh sách xuống dưới cùng ,
+    // thì tự động tải thêm và nối dữ liệu vào List
     String url = "https://imageio.forbes.com/specials-images/imageserve/6064af50093e0936dc61b40f/2020-Ford-GT/960x0.jpg";
     String gif = "https://i.pinimg.com/originals/0c/64/9a/0c649a17ec1e5f5ca340248b4ef4e4be.gif";
 
@@ -77,8 +79,6 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Loi ...", Toast.LENGTH_SHORT).show();
                 }
             });
-
-
 
         });
 

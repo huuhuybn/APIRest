@@ -36,6 +36,10 @@ public interface RetrofitService {
     public Call<User> createPost(@Body User user);
 
 
+    @GET("api/users")
+    Call<List<Person>> getListUsers(@Query("page") int page, @Query("limit") int limit);
+
+
 
 
 
